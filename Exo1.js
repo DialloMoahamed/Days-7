@@ -40,3 +40,11 @@ function périmètredurectangle(x,y) {
     console.log(périmètre);
 }
 périmètredurectangle(5,9)
+
+
+// Reponse numero 6
+function volumeOfRectPrism(x,y,z) {
+    volume = x * y * z
+    console.log(volume);
+}
+volumeOfRectPrism(5,9,13);
