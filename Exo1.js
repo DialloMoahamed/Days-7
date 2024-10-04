@@ -56,3 +56,11 @@ function areaOfCircle(r) {
     console.log(aire);
 }
 areaOfCircle(4)
+
+
+// Reponse numero 8
+function circumOfCircle(r) {
+    circonférence = 2 * Math.PI * r
+    console.log(circonférence);
+}
+circumOfCircle(7);
