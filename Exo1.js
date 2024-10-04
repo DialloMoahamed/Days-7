@@ -32,3 +32,11 @@ function areaOfRectangle(x, y) {
     console.log(aire);
 }
 areaOfRectangle(10,5);
+
+
+// Reponse numero 5
+function périmètredurectangle(x,y) {
+    périmètre = 2 * (x + y)
+    console.log(périmètre);
+}
+périmètredurectangle(5,9)
