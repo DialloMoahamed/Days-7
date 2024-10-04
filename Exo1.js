@@ -24,3 +24,11 @@ function addNumbers(x,y) {
     console.log(somme);
 }
 addNumbers(12,20);
+
+
+// Reponse numero 4
+function areaOfRectangle(x, y) {
+    let aire = x * y;
+    console.log(aire);
+}
+areaOfRectangle(10,5);
