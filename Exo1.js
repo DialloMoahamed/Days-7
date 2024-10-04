@@ -64,3 +64,11 @@ function circumOfCircle(r) {
     console.log(circonférence);
 }
 circumOfCircle(7);
+
+
+// Reponse numero 9
+function densité(masse,volume) {
+   let densité = masse / volume;
+   console.log(densité);
+}
+densité(12,2)
