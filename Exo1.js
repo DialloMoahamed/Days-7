@@ -16,3 +16,11 @@ function fullName(firstName = 'Mohamed',secondName = 'Attahir'){
     console.log(fullName);
 }
 fullName();
+
+
+// Reponse numero 3
+function addNumbers(x,y) {
+    let somme = x + y
+    console.log(somme);
+}
+addNumbers(12,20);
