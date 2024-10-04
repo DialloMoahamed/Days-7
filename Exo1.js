@@ -72,3 +72,11 @@ function densité(masse,volume) {
    console.log(densité);
 }
 densité(12,2)
+
+
+// Reponse numero 10
+function speed(totaldistancecovered,totalamountoftimetaken) {
+    let speed = totaldistancecovered / totalamountoftimetaken;
+    console.log(speed);
+}
+speed(100,5)
