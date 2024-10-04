@@ -88,3 +88,11 @@ function Weight(mass,gravity) {
     console.log(poids);
 }
 Weight(23,6)
+
+
+// Reponse numero 12
+function convertCelsiusToFahrenheit(oC) {
+    oF = (oC * 9/5) + 32;
+    console.log(oF);
+}
+convertCelsiusToFahrenheit(3);
