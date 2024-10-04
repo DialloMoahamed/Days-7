@@ -96,3 +96,11 @@ function convertCelsiusToFahrenheit(oC) {
     console.log(oF);
 }
 convertCelsiusToFahrenheit(3);
+
+
+// Reponse numero 13
+function indicedemassecorporelle(poids,taille) {
+    let imc = poids / (taille * taille);
+    console.log(imc);
+}
+indicedemassecorporelle(70,1.90)
