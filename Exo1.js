@@ -80,3 +80,11 @@ function speed(totaldistancecovered,totalamountoftimetaken) {
     console.log(speed);
 }
 speed(100,5)
+
+
+// Reponse numero 11
+function Weight(mass,gravity) {
+    let poids = mass * gravity
+    console.log(poids);
+}
+Weight(23,6)
