@@ -48,3 +48,11 @@ function volumeOfRectPrism(x,y,z) {
     console.log(volume);
 }
 volumeOfRectPrism(5,9,13);
+
+
+// Reponse numero 7
+function areaOfCircle(r) {
+    aire = Math.PI * r * r 
+    console.log(aire);
+}
+areaOfCircle(4)
