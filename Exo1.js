@@ -100,7 +100,23 @@ convertCelsiusToFahrenheit(3);
 
 // Reponse numero 13
 function indicedemassecorporelle(poids,taille) {
-    let imc = poids / (taille * taille);
+    let imc = poids / (taille * taille) + ' Kg/m2';
     console.log(imc);
 }
 indicedemassecorporelle(70,1.90)
+
+
+// Reponse numero 14
+
+function checkSeason(month) { 
+     if (month >= 2 && month <= 4) {
+        console.log("C'est le printemps");
+    } else if (month >= 5 && month <= 7) {
+        console.log("C'est l'été");
+    } else if (month >= 8 && month <= 10) {
+        console.log("C'est l'automne");
+    } else {
+        console.log("C'est l'hiver");
+    }
+}
+checkSeason(1)
