@@ -36,3 +36,19 @@ function printArray(array) {
     }
 }
 printArray(["Mohamed", 22, "serpent", 33])
+
+
+// Réponse numero 4
+function showDateTime(now) {
+    now = new Date();
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1); 
+    const day = now.getDate();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}`;
+
+    console.log(formattedDate); 
+}
+showDateTime()
