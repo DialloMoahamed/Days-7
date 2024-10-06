@@ -27,3 +27,12 @@ console.log(solveQuadEquation(1, -1 ,-1));
 console.log(solveQuadEquation(1, 7, 12));
 console.log(solveQuadEquation(1, 0, -4));
 console.log(solveQuadEquation(1, -1, 0));
+
+
+// Réponse numero 3
+function printArray(array) {
+    for (let o = 0; o < array.length; o++) {
+        console.log(array[o]);;  
+    }
+}
+printArray(["Mohamed", 22, "serpent", 33])
