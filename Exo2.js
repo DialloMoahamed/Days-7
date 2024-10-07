@@ -52,3 +52,11 @@ function showDateTime(now) {
     console.log(formattedDate); 
 }
 showDateTime()
+
+
+// Réponse numero 5
+function swapValues(x, y) {
+    [x, y] = [y, x]
+    console.log(x,y);
+}
+swapValues(1,6)
