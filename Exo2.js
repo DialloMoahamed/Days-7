@@ -60,3 +60,14 @@ function swapValues(x, y) {
     console.log(x,y);
 }
 swapValues(1,6)
+
+
+// Réponse numero 6
+function reverseArray(array2) {
+    let array3 = [];
+    for (let i = array2.length; i >= 0; i--) {
+       array3.push(array2[i])
+    }
+    return array3
+}
+console.log(reverseArray([21,34,32,23,91,1]));
