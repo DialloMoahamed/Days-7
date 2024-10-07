@@ -71,3 +71,14 @@ function reverseArray(array2) {
     return array3
 }
 console.log(reverseArray([21,34,32,23,91,1]));
+
+
+// Réponse numero 7
+function capitalizeArray(tableau) {
+    let tableauEnMajuscule = []
+    for (let s = 0; s < tableau.length; s++) {
+        tableauEnMajuscule.push(tableau[s].toUpperCase())
+    }
+    return tableauEnMajuscule
+}
+console.log(capitalizeArray(["mohamed", "diallo", "abdoul rahim"]));
