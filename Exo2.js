@@ -104,3 +104,14 @@ function removeItem(index) {
 console.log(removeItem(6));
 
 
+// Réponse numero 10
+function sumOfNumbers(number) {
+    let sum = 0
+    for (let s = 0; s < number; s++) {
+       sum += number
+    }
+    return sum  
+}
+console.log(sumOfNumbers(2));
+
+ 
