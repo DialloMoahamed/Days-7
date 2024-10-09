@@ -93,3 +93,14 @@ function addItem(item) {
     return tableItem
 }
 console.log(addItem(["mohamed", "abdoul rahim"]));
+
+
+// Réponse numero 9
+const tableau = [1, 2, 23, "Mohamed", "Ibrahim", true, false]
+function removeItem(index) {
+    tableau.splice(index, 1)
+    return tableau
+}
+console.log(removeItem(6));
+
+
