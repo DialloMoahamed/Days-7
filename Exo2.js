@@ -186,3 +186,17 @@ function randomMacAddress(macadress) {
     return mac.join(':')
 }
 console.log(randomMacAddress());
+
+
+// Réponse numero 17
+const characters = '0123456789abcdef'
+let randomIde = '#';
+function randomHexaNumberGenerator() {
+    for (let r = 0; r < 6; r++) {
+        let randomInde = Math.floor(Math.random() * characters.length);
+        randomIde += characters.charAt(randomInde);
+        
+    };
+    return randomIde;
+}
+console.log(randomHexaNumberGenerator());
