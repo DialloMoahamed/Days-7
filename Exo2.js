@@ -167,7 +167,7 @@ console.log(takesAnyNumber());
 
 
 // Réponse numero 15
-function randomUserIp(value) {
+function randomUserIp() {
     let octets = [];
     for (let t = 0; t <= 4; t++) {
         octets.push(Math.floor(Math.random() * 256))
@@ -175,3 +175,14 @@ function randomUserIp(value) {
     return octets.join('.')
 }
 console.log(randomUserIp());
+
+
+// Réponse numero 16
+function randomMacAddress(macadress) {
+    let mac = [];
+    for (let c = 0; c <= 6; c++) {
+        mac.push(Math.floor(Math.random() * 256).toString(16));
+    }
+    return mac.join(':')
+}
+console.log(randomMacAddress());
