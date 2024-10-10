@@ -157,3 +157,21 @@ function evensAndOdds(positive) {
     console.log("The number of evens are " + evens + ".");
 }
 console.log(evensAndOdds(100));
+
+
+// Réponse numero 14
+function takesAnyNumber(item) {
+    
+}
+console.log(takesAnyNumber());
+
+
+// Réponse numero 15
+function randomUserIp(value) {
+    let octets = [];
+    for (let t = 0; t <= 4; t++) {
+        octets.push(Math.floor(Math.random() * 256))
+    }
+    return octets.join('.')
+}
+console.log(randomUserIp());
