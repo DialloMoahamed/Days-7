@@ -128,3 +128,15 @@ function sumOfOdds(limit) {
 }
 console.log(sumOfOdds(10));
 
+
+// Réponse numero 12
+function sumOfEven(Even) {
+    let paires = 0
+    for (let p = 0; p <= Even; p++) {
+        if (p % 2 === 0) {
+            paires += p
+        }
+    }
+   return paires
+}
+console.log(sumOfEven(10));
