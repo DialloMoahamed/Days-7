@@ -190,13 +190,27 @@ console.log(randomMacAddress());
 
 // Réponse numero 17
 const characters = '0123456789abcdef'
-let randomIde = '#';
+let randomCharacters = '#';
 function randomHexaNumberGenerator() {
     for (let r = 0; r < 6; r++) {
-        let randomInde = Math.floor(Math.random() * characters.length);
-        randomIde += characters.charAt(randomInde);
+        let random = Math.floor(Math.random() * characters.length);
+        randomCharacters += characters.charAt(random);
         
     };
-    return randomIde;
+    return randomCharacters;
 }
 console.log(randomHexaNumberGenerator());
+
+
+// Réponse numero 18
+const lettres = 'AZERTYUIJH12345678GFDSQDFYUIJHGFDER123456789TYUwxcvghjkloiuytrdfghjiiuezqsf123456789ghhjoigycdsufduzgf123456789fèuzuyzuyffzdzd';
+let randomId = '';
+function userIdGenerator() {
+    for (let r = 0; r < 6; r++) {
+        let randomIndex = Math.floor(Math.random() * lettres.length);
+        randomId += lettres.charAt(randomIndex);
+        
+    };
+    return randomId;
+}
+console.log(userIdGenerator());
