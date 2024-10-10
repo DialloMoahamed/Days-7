@@ -28,3 +28,17 @@ function rgbColorGenerator(couleur) {
     return couleur
 }
 console.log(rgbColorGenerator());
+
+
+// Réponse numero 3
+const characters = '0123456789abcdef'
+let randomCharacters = '#';
+function arrayOfHexaColors() {
+    for (let r = 0; r < 6; r++) {
+        let random = Math.floor(Math.random() * characters.length);
+        randomCharacters += characters.charAt(random);
+        
+    };
+    return randomCharacters.split();
+}
+console.log(arrayOfHexaColors());
