@@ -140,3 +140,20 @@ function sumOfEven(Even) {
    return paires
 }
 console.log(sumOfEven(10));
+
+
+// Réponse numero 13
+function evensAndOdds(positive) {
+    let evens = 0;
+    let odds = 0;
+    for (let e = 0; e <= positive; e++) {
+        if (e % 2 === 0) {
+            evens++
+        }else {
+            odds++ 
+        }
+    }
+    console.log("The number of odds are " + odds + ".")
+    console.log("The number of evens are " + evens + ".");
+}
+console.log(evensAndOdds(100));
