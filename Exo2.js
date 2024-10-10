@@ -114,4 +114,17 @@ function sumOfNumbers(number) {
 }
 console.log(sumOfNumbers(2));
 
- 
+
+// Réponse numero 11
+function sumOfOdds(limit) {
+    let som = 0
+    for (let i = 0; i <= limit; i++) {
+        if (i % 2 !== 0) {
+            som += i
+            
+        }
+    }
+    return som
+}
+console.log(sumOfOdds(10));
+
