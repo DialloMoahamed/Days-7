@@ -1,22 +1,22 @@
 // Réponse numero 1
-const lettres = 'AZERTYUIJH12345678GFDSQDFYUIJHGFDER123456789TYUwxcvghjkloiuytrdfghjiiuezqsf123456789ghhjoigycdsufduzgf123456789fèuzuyzuyffzdzd';
-let randomId = '';
-let randomId2 = '';
-function userIdGenerator() {
-   let premiereEntrer = prompt("Entrez le nombre de caractères")
-   let deuxiemeEntrer = prompt("Entrez le nombre d'identifiants")
-    for (let r = 0; r < premiereEntrer; r++) {
-        let randomIndex = Math.floor(Math.random() * lettres.length);
-        randomId += lettres.charAt(randomIndex); 
-    };
-    for (let q = 0; q < deuxiemeEntrer; q++) {
-        let randomIndexe = Math.floor(Math.random() * lettres.length);
-        randomId2 += lettres.charAt(randomIndexe); 
-    };
-    console.log(randomId);
-    console.log(randomId2);
-}
-console.log(userIdGenerator());
+// const lettres = 'AZERTYUIJH12345678GFDSQDFYUIJHGFDER123456789TYUwxcvghjkloiuytrdfghjiiuezqsf123456789ghhjoigycdsufduzgf123456789fèuzuyzuyffzdzd';
+// let randomId = '';
+// let randomId2 = '';
+// function userIdGenerator() {
+//    let premiereEntrer = prompt("Entrez le nombre de caractères")
+//    let deuxiemeEntrer = prompt("Entrez le nombre d'identifiants")
+//     for (let r = 0; r < premiereEntrer; r++) {
+//         let randomIndex = Math.floor(Math.random() * lettres.length);
+//         randomId += lettres.charAt(randomIndex); 
+//     };
+//     for (let q = 0; q < deuxiemeEntrer; q++) {
+//         let randomIndexe = Math.floor(Math.random() * lettres.length);
+//         randomId2 += lettres.charAt(randomIndexe); 
+//     };
+//     console.log(randomId);
+//     console.log(randomId2);
+// }
+// console.log(userIdGenerator());
 
 
 // Réponse numero 2
@@ -37,7 +37,8 @@ function arrayOfHexaColors(colorhexa) {
     for (let i = 0; i < colorhexa; i++) {
         let randomCharacters = '#';
         for (let r = 0; r < 6; r++) {
-        randomCharacters += Math.floor(Math.random() * characters.length.toString(16));  
+            random = Math.floor(Math.random() * characters.length);
+            randomCharacters += characters.charAt(random)  
     }
         table.push(randomCharacters)
    }
@@ -69,7 +70,7 @@ let randomCharacters = '#';
 function convertHexaToRgb() {
     let recap = ''
     for (let r = 0; r < 6; r++) {
-        let random = Math.floor(Math.random() * characters.length);
+        let random = Math.floor(Math.random() * character.length);
         randomCharacters += characters.charAt(random);
     };
     let r = Math.floor(Math.random() * 256);
@@ -85,11 +86,13 @@ console.log(convertHexaToRgb());
 
 
 // Réponse numero 6
+const lettre = '0123456789abcdef'
 function convertRgbToHexa() {
     let recaputilatif = '';
     let randomCharacters = '#';
         for (let r = 0; r < 6; r++) {
-        randomCharacters += Math.floor(Math.random() * characters.length.toString(16));  
+        random = Math.floor(Math.random() * lettre.length);
+        randomCharacters += lettre.charAt(random);  
     }
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
@@ -101,3 +104,17 @@ function convertRgbToHexa() {
     return recaputilatif
 }
 console.log(convertRgbToHexa());
+
+
+// Réponse numero 7
+function generateColors(count, format) {
+    
+}
+
+
+// Réponse numero 8
+function shuffleArray(array) {
+    let melange = array.sort()
+    return melange
+}
+console.log(shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
