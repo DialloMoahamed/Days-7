@@ -61,3 +61,24 @@ function arrayOfRgbColors(couleurrgb) {
     return table2
 }
 console.log(arrayOfRgbColors(6));
+
+
+// Réponse numero 5
+const character = '0123456789abcdef'
+let randomCharacters = '#';
+function convertHexaToRgb() {
+    let recap = ''
+    for (let r = 0; r < 6; r++) {
+        let random = Math.floor(Math.random() * characters.length);
+        randomCharacters += characters.charAt(random);
+    };
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    color = "rgb(" + r + "," + g + "," + b + ")";
+    if (recap = randomCharacters) {
+        return color
+    }
+    return recap
+}
+console.log(convertHexaToRgb());
