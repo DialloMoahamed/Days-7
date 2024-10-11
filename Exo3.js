@@ -82,3 +82,22 @@ function convertHexaToRgb() {
     return recap
 }
 console.log(convertHexaToRgb());
+
+
+// Réponse numero 6
+function convertRgbToHexa() {
+    let recaputilatif = '';
+    let randomCharacters = '#';
+        for (let r = 0; r < 6; r++) {
+        randomCharacters += Math.floor(Math.random() * characters.length.toString(16));  
+    }
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    color = "rgb(" + r + "," + g + "," + b + ")";
+    if (recaputilatif = color) {
+        return randomCharacters
+    }
+    return recaputilatif
+}
+console.log(convertRgbToHexa());
