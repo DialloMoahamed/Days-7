@@ -147,3 +147,10 @@ function isEmpty(empty) {
     } 
 }
 console.log(isEmpty());
+
+
+// Réponse numero 11
+function sum(...nombres) {
+    return nombres.reduce((totale, nombre) => totale + nombre)
+}
+console.log(sum(2,3,4,12,13));
