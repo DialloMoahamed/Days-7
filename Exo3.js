@@ -118,3 +118,21 @@ function shuffleArray(array) {
     return melange
 }
 console.log(shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+
+// Réponse numero 9
+function factorielle(n) {
+   if (n < 0) {
+        return "La factorielle n'est défini que pour les nombres positif"
+   } else if (n === 0 || n === 1) {
+        return 1
+   } else {
+    let resulta = 1;
+    for (let o = 2; o <= n; o++) {
+        resulta *= o
+    }
+    return resulta
+    }
+    
+}
+console.log(factorielle(2));
