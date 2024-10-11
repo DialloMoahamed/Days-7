@@ -136,3 +136,14 @@ function factorielle(n) {
     
 }
 console.log(factorielle(2));
+
+
+// Réponse numero 10
+function isEmpty(empty) {
+    if (Number(empty) || empty === ""|| empty === null || empty === NaN){
+        return "He is not empty"
+    } else {
+        return "He is empty"
+    } 
+}
+console.log(isEmpty());
