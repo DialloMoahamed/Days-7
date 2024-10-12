@@ -181,7 +181,7 @@ console.log(average([1,2,4,3,7]));
 // Réponse numero 14
 function modifiedArray(array) {
     if (array.length >= 5) {
-      array[4] = prompt("Nouvelles valeurs"); 
+    //   array[4] = prompt("Nouvelles valeurs"); 
       return array;
     } else {
       return "Élément non trouvé";
@@ -190,3 +190,14 @@ function modifiedArray(array) {
 console.log(modifiedArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']));
 
 // Réponse numero 15
+function isPrime(number) {
+    for (let d = 2; d <= number; d++) {
+        if (number % d !== 0) {
+            return number + " est premier"
+        } else {
+            return number + " n'est pas premier"
+        }
+    }
+   
+}
+console.log(isPrime(21));
