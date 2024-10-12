@@ -232,3 +232,27 @@ function genererTableauAleatoireUnique() {
   }
   
   console.log(genererTableauAleatoireUnique());
+
+
+// Réponse numero 20
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+function reverseCountries() {
+    let tableA = [];
+    for (let b = 0; b < countries.length; b++) {
+        tableA.push(countries[b])
+ };
+ return tableA.reverse();
+}
+console.log(reverseCountries());
