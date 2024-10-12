@@ -165,3 +165,14 @@ function sumOfArrayItems(array) {
     }
 }
 console.log(sumOfArrayItems([1,2,4,3,7]));
+
+
+// Réponse numero 13
+function average(arr) {
+   if (arr.every(tout => typeof tout === 'number')) {
+    return arr.reduce((premier,second) => premier + second / arr.length)
+   } else {
+    return "Ce tableau contient des élément qui ne sont pas des nombres"
+   }
+}
+console.log(average([1,2,4,3,7]));
