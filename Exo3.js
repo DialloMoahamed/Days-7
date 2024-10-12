@@ -201,3 +201,18 @@ function isPrime(number) {
    
 }
 console.log(isPrime(21));
+
+
+// Réponse numero 16
+function areunique(element) {
+    for (let i = 0; i < element.length; i++) {
+        if (element[i] >= 2) {
+            return element[i] + " n'est pas unique"
+        } else {
+            return element[i] + " est unique"
+        }
+        
+    }
+  
+}
+console.log(areunique(['Avocado','Tomato', 'Potato','Mango', 'Lemon','Carrot']));
