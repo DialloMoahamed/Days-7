@@ -181,7 +181,7 @@ console.log(average([1,2,4,3,7]));
 // Réponse numero 14
 function modifiedArray(array) {
     if (array.length >= 5) {
-    //   array[4] = prompt("Nouvelles valeurs"); 
+      array[4] = prompt("Nouvelles valeurs"); 
       return array;
     } else {
       return "Élément non trouvé";
