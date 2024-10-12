@@ -216,3 +216,19 @@ function areunique(element) {
   
 }
 console.log(areunique(['Avocado','Tomato', 'Potato','Mango', 'Lemon','Carrot']));
+
+
+// Réponse numero 19
+function genererTableauAleatoireUnique() {
+    const nombresPossibles = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const tableauAleatoire = [];
+    while (tableauAleatoire.length < 7) {
+      const indexAleatoire = Math.floor(Math.random() * nombresPossibles.length);
+      tableauAleatoire.push(nombresPossibles[indexAleatoire]);
+      nombresPossibles.splice(indexAleatoire, 1);
+    }
+  
+    return tableauAleatoire;
+  }
+  
+  console.log(genererTableauAleatoireUnique());
