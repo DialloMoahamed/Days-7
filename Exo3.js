@@ -179,12 +179,14 @@ console.log(average([1,2,4,3,7]));
 
 
 // Réponse numero 14
-const tableau = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
-function modifiedArray(index) {
-    let array3 = tableau.splice(index, 1)
-    return array3
-}
-console.log(modifiedArray(5));
-console.log(tableau);
-console.log(modifiedArray(4));
-console.log(tableau);
+function modifiedArray(array) {
+    if (array.length >= 5) {
+      array[4] = prompt("Nouvelles valeurs"); 
+      return array;
+    } else {
+      return "Élément non trouvé";
+    }
+  }
+console.log(modifiedArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']));
+
+// Réponse numero 15
