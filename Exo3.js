@@ -176,3 +176,15 @@ function average(arr) {
    }
 }
 console.log(average([1,2,4,3,7]));
+
+
+// Réponse numero 14
+const tableau = ['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']
+function modifiedArray(index) {
+    let array3 = tableau.splice(index, 1)
+    return array3
+}
+console.log(modifiedArray(5));
+console.log(tableau);
+console.log(modifiedArray(4));
+console.log(tableau);
