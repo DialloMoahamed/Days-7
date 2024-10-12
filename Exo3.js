@@ -154,3 +154,14 @@ function sum(...nombres) {
     return nombres.reduce((totale, nombre) => totale + nombre)
 }
 console.log(sum(2,3,4,12,13));
+
+
+// Réponse numero 12
+function sumOfArrayItems(array) {
+    if (array.every(item => typeof item === 'number')) {
+        return array.reduce((nom, tab) => nom + tab)
+    } else {
+        return "Ce tableau contient des élément qui ne sont pas des nombres"; 
+    }
+}
+console.log(sumOfArrayItems([1,2,4,3,7]));
