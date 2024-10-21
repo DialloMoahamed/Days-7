@@ -10,12 +10,12 @@ fullName();
 
 
 // Reponse numero 2
-function fullName(firstName = 'Mohamed',secondName = 'Attahir'){
+function fullNameWithParameter(firstName = 'Mohamed',secondName = 'Attahir'){
     let space = ' ';
     let fullName = firstName + space + secondName
-    console.log(fullName);
+    console.log("fullName",fullName);
 }
-fullName();
+fullNameWithParameter("Sofiane", "Soul");
 
 
 // Reponse numero 3

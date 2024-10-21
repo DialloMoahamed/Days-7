@@ -107,9 +107,21 @@ console.log(convertRgbToHexa());
 
 
 // Réponse numero 7
-function generateColors(count, format) {
-    
+const letrs = '0123456789abcdef'
+function generateColors(val = '', count = 0) {
+    let randomCharacters = '#';
+        for (let r = 0; r < 6; r++) {
+        random = Math.floor(Math.random() * lettre.length);
+        randomCharacters += lettre.charAt(random);  
+    }
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    color = "rgb(" + r + "," + g + "," + b + ")";
+   
 }
+console.log(generateColors('rgb', ));
+
 
 
 // Réponse numero 8
@@ -191,31 +203,36 @@ console.log(modifiedArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carro
 
 // Réponse numero 15
 function isPrime(number) {
+    let compteure = 0;
     for (let d = 2; d <= number; d++) {
-        if (number % d !== 0) {
-            return number + " est premier"
-        } else {
-            return number + " n'est pas premier"
+        for (let j = 2; j < d; j++) {
+            if (d % j === 0) {
+                compteure = compteure + 1
+            }
         }
+        if (compteure === 0) {
+            console.log(d ," est premier");
+        }
+            compteure = 0;
     }
    
 }
-console.log(isPrime(21));
+console.log(isPrime(9));
 
 
 // Réponse numero 16
-function areunique(element) {
-    for (let i = 0; i < element.length; i++) {
-        if (element[i] >= 2) {
-            return element[i] + " n'est pas unique"
-        } else {
-            return element[i] + " est unique"
-        }
-        
+function tousElementsUniques(tableau) {
+    const tableauTrie = tableau.sort();
+    for (let i = 1; i < tableauTrie.length; i++) {
+      if (tableauTrie[i] === tableauTrie[i - 1]) {
+        console.log(tableauTrie[i], " n'est pas unique");
+      }else {
+        console.log(tableauTrie[i], "est unique")
+      }
     }
-  
-}
-console.log(areunique(['Avocado','Tomato', 'Potato','Mango', 'Lemon','Carrot']));
+    
+  }
+console.log(tousElementsUniques(['Avocado','Tomato','Potato','Mango', 'Lemon','Carrot','Tomato']));
 
 
 // Réponse numero 19

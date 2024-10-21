@@ -86,13 +86,11 @@ console.log(capitalizeArray(["mohamed", "diallo", "abdoul rahim"]));
 
 // Réponse numero 8
 function addItem(item) {
-    let tableItem = []
     for (let u = 0; u < item.length; u++) {
-        tableItem.push(item[u])
+        return Array(item) 
     }
-    return tableItem
 }
-console.log(addItem(["mohamed", "abdoul rahim"]));
+console.log(addItem(["mohamed"]));
 
 
 // Réponse numero 9
